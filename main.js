@@ -43,3 +43,15 @@ const removeEndangeredStatus = (animal) => {
 
 console.log(removeEndangeredStatus(tiger));
 
+const hasHabitat = (animal) => {
+  return animal.hasOwnProperty("habitat");
+};
+
+console.log(hasHabitat(tiger));
+console.log(hasHabitat(elephant));
+
+function getProperty (animal, propertyName) {
+  return animal[propertyName];
+}
+console.log(getProperty(tiger, "species"));
+console.log(getProperty(elephant, "age"));
